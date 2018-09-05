@@ -1,0 +1,31 @@
+{
+    "Slider" : [
+        {
+            "1":{
+                "Header":"Başarıya yelken açıldı!",
+                "HeaderDate":"Trofe 2018",
+                "ImageURL":"../public/Photos/Slider1.png"
+            },
+            "2":{
+                "Header":"Lorem ipsum dolor sit amet",
+                "HeaderDate":"consectetur adipiscing elit",
+                "ImageURL":"/../public/Photos/Photo8.jpg"
+            },
+            "3":{
+                "Header":"Aliquam suscipit quam",
+                "HeaderDate":"ut hendrerit imperdie",
+                "ImageURL":"/../public/Photos/Photo5.jpg"
+            },
+            "4":{
+                "Header":"Ut porttitor enim eget dolor",
+                "HeaderDate":"feugiat blandit quis eu nulla",
+                "ImageURL":"/../public/Photos/Photo6.jpg"
+            },
+            "5":{
+                "Header":"Proin pellentesque metus",
+                "HeaderDate":"quis quam varius vestibulum",
+                "ImageURL":"/../public/Photos/Photo7.jpg"
+            }
+        }
+    ]
+}

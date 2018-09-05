@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.box{
+    text-align: center;
+    overflow: hidden;
+    
+}
+a:link {
+    color: rgb(153,153,153);
+    text-decoration: none;
+}
+.box1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    cursor: pointer;
+}
+.box2{
+   background: white;
+}
+.box3{
+    background: white;
+}
+.box3 li{
+    float: left;
+    padding-right: 15px;
+    list-style-type: none;
+    padding-top: 15px;
+}
+.box3 a{
+    text-decoration-line: none;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 15px;
+    color: rgb(153,153,153);
+    font-family: "Roboto";
+}
+.box3 #Language{
+    font-size: 13px;
+    line-height: 40px;
+    color: rgb(153,153,153);
+    font-family: "Roboto";
+    font-weight: 300;
+    float: right;
+    
+}
+.box4{
+    background: white;
+}
+.box5{
+    background: white;
+}
+.box6{
+    
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+    overflow: hidden;
+}
+.box6 #Slider{
+    position: relative;
+    height: 850px;
+    width: 1540px;
+    z-index: 1;
+}
+.box6 #SliderControl{
+    position: relative;
+    z-index: 2;
+}
+.box6 #SliderBack{
+    position: absolute;
+    top: 835px;
+    left: 360px;
+    overflow: hidden;
+    z-index: 2;
+    
+}
+.box6 #SliderLeftArrow{
+    position: absolute;
+    top: 882px;
+    left: 575px;   
+    cursor: pointer;
+    z-index: 3;
+}
+.box6 #SliderRightArrow{
+    position: absolute;
+    top: 882px;
+    left: 700px;
+    cursor: pointer;
+    z-index: 3;
+}
+.box6 p{
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height: 47px;
+    color: rgb(38,38,38);
+    font-family: 'Roboto';
+    font-weight: 900;
+    position: absolute;
+    
+    z-index: 2;
+}
+.box6 .Index{
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(153,153,153);
+    font-family: "Roboto";
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    left: -65px;
+}
+.box6 .Total{
+    font-size: 30px;
+    line-height: 40px;
+    color: rgb(38,38,38);
+    font-family: "Roboto";
+    position: relative;
+    top: -40px;
+    left: -15px;
+}
+.box6 .rotateRight{
+    width: 150px;
+    height: 80px;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(90deg);
+    position: absolute;
+    top: 892px;
+    left: 324px;
+    z-index: 3;
+}
+.box6 #RotationKadran{
+    position: absolute;
+    top: 890px;
+    left: 384px;
+    width: 43px;
+    height: 1px;
+    background-color: #999999;
+    z-index: 3;
+}
+.box7{
+    background: white;
+}
+.box8{
+    background: white;
+}
+.box8 ul{
+    padding-left: 450px;
+    z-index: 3;
+}
+.box8 .leftSide{
+    float: left;
+    padding: 25px 30px 50px 0px;
+    list-style-type: none;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 15px;
+    color: rgb(153,153,153);
+    font-family: "Roboto";
+    left: 500px;
+}
+.box9{
+    background: white;
+}
+.Kont{
+    display: grid;
+    grid-template-rows: 100px 850px 130px;
+    grid-template-columns: 70px 290px 1200px 340px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav h2{
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 28px;
+    color: rgb(230,230,230);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.sidenav h1{
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 71px;
+    color: rgb(230,230,230);
+    font-family: "Roboto";
+    font-weight: bold;
+    
+    
+}
+.sidenav .outerList{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: rgb(230,230,230);
+    font-family: 'Inconsolata', monospace;
+    list-style-type: none;
+    text-align: left;
+    
+}
+.sidenav .innerList{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: rgb(153,153,153);
+    font-family: "Inconsolata";
+    list-style-type: none;
+    text-align: left;
+    
+}
+.sidenav a {
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: rgb(153,153,153);
+    font-family: "Inconsolata";
+    list-style-type: none;
+    
+    
+}
+.sidenav div{
+    float: left;
+}
+
+.sidenav a:hover{
+    color: #fff101;
+    font-size: 18px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.SecondBox1{
+    background: white;
+}
+.SecondBox2{
+    background: white;
+}
+.SecondBox3{
+    background: white;
+}
+.SecondBox4{
+    background: white;
+}
+.SecondBox5{
+    background: white;
+}
+.SecondBox5 #TanitimBaslik{
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: rgb(38,38,38);
+    font-family: "Lato";
+    font-weight: bold;
+    text-align: center;
+}
+.SecondBox5 #TanitimYazisi{
+    width: 757px;
+    height: 55px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: rgb(38,38,38);
+    font-family: "Roboto";
+    text-align: center;
+    margin-left: 200px;
+}
+.SecondBox6{
+    background: white;
+}
+.SecondBox7{
+    background: white;
+}
+.SecondBox8{
+    background: white;
+}
+.SecondBox9{
+    background: white;
+}
+.SecondKont{
+    display: grid;
+    grid-template-rows: 100px 880px 100px;
+    grid-template-columns: 360px 1200px 340px;
+}
+.SecondBoxInternal{
+    display: grid;
+    grid-template-columns: 490px 225px 485px;
+    grid-template-rows: 100px 780px; 
+}
+.SecondBoxInternal1{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+.SecondBoxInternal2{
+    
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100% 100%;
+}
+.Numerator{
+    font-size: 14px;
+    line-height: 61px;
+    color: rgb(153,153,153);
+    font-family: "Roboto";
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+.Numerator:hover{
+    font-size: 70px;
+    color: black;
+}
+.SecondBoxInternal4 #NewsHead{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: rgb(38,38,38);
+    font-family: "Roboto";
+    font-weight: bold;
+    text-align: right;
+}
+.SecondBoxInternal4 .NewsContent{
+    width: 286px;
+    height: 335px;
+    font-size: 13px;
+    line-height: 25px;
+    color: rgb(38,38,38);
+    font-family: "Roboto";
+    text-align: right;
+    margin-left: 198px;
+    margin-right: 0;
+}
+.ThirdKont{
+    display: grid;
+    grid-template-columns: 1920px;
+    grid-template-rows: 1080px;
+}
+.ThirdKont .LonelyDiv{
+    background-image: url(./Photos/ThirdBackground.png);
+    background-repeat: no-repeat;
+    background-position: bottom;  
+}
+.ForthKont{
+    display: grid;
+    grid-template-columns: 360px 1200px 340px;
+    grid-template-rows: 160px 830px 90px;
+}
+.ForthKont .ForthBox1{
+    background: white;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+.ForthKont .ForthBox2{
+    background:white;
+}
+.ForthKont .ForthBox3{
+    background:white;
+}
+.ForthKont .ForthBox4{
+    background: white;
+}
+.ForthKont .ForthBox5{
+    background:white
+}
+.ForthKont .ForthBox6{
+    background:white;
+}
+.ForthKont .ForthBox7{
+    background: white;
+}
+
+.LeftSideText{
+    font-size: 12px;
+    letter-spacing: 10px;
+    color: rgb(153,153,153);
+    font-family: "Lato";
+    font-weight: bold;
+    text-align: right;
+    transform: rotate(270deg);
+    position: relative;
+    top: 262px;
+    width: 508px;
+}
+.RightSideText{
+    font-size: 12px;
+    letter-spacing: 10px;
+    color: rgb(153,153,153);
+    font-family: "Lato";
+    font-weight: bold;
+    text-align: right;
+    transform: rotate(270deg);
+    position: relative;
+    width: 508px;
+    top: 500px;
+    right: 140px;
+}
+.ForthHeader{
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: rgb(153,153,153);
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+}
+.ForthAltHeader{
+    font-size: 28px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: rgb(38,38,38);
+    font-family: "Roboto";
+    font-weight: bold;
+    text-align: center;
+}
+.ForthContent{
+    width: 945px;
+    height: 106px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: rgb(38,38,38);
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+    margin-left: 130px;
+}
+.ReadMore{
+    font-size: 17px;
+    line-height: 36px;
+    color: rgb(153,153,153);
+    font-family: "Roboto";
+    font-weight: bold;
+    text-align: center;
+}
+.SliderImage{
+    width: 380px;
+    height: 253.33px;
+}
+.BackButton{
+    position: relative;
+    top: 625px;
+    left: 310px;
+    cursor: pointer;
+}
+.NextButton{
+    position: relative;
+    top: 625px;
+    right: 190px;
+    cursor: pointer;
+}
+.GaleriParag{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: rgb(153,153,153);
+    font-family: "Roboto";
+    font-weight: bold;
+    text-align: left;
+}
+.LastKont{
+    display: grid;
+    grid-template-rows: 2560px;
+    grid-template-columns:1900px;
+    
+}
+.BiggestOne{
+    background-image: url(./Photos/LastPart.png)
+}

@@ -1,0 +1,279 @@
+<template>
+      <div>
+      <div class="Kont">
+        <Menu class="box1"></Menu>
+        <div class="box box2"></div>
+        <div class="box box3">
+            <Header></Header>
+        </div>
+        <div class="box box4"></div>
+        <div class="box box5">
+            <img src="../../public/Photos/Logo.png" style="padding-top: 360px;">
+        </div>
+        <div class="box box6" id="app2" >
+            <div v-for='data in Slider' :key="data.id">
+
+                <p>{{data[SliderID]['Header']}}
+                    <br>{{data[SliderID]['HeaderDate']}}</p>
+                <img id="Slider" :src="data[SliderID].ImageURL">
+
+                <img src="../../public/Photos/SliderBack2.png" id="SliderBack">
+                <img src="../../public/Photos/RotationKadran.png" id="RotationKadran">
+                <img src="../../public/Photos/LeftArrow.png" id="SliderLeftArrow" v-on:click="prevPic">
+                <img src="../../public/Photos/RightArrow.png" id="SliderRightArrow" v-on:click="nextPic">
+
+                <div class="rotateRight" id="rotateRight">
+
+                    <p class="Index">0{{SliderID}}</p>
+                    <p class="Total">05</p>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="box box7"></div>
+        <div class="box box8">
+            <ul>
+                <li class="leftSide">
+                    <img src="../../public/Photos/VideoIcon.png" alt="">
+                </li>
+                <li class="leftSide">
+                    <a href="">VIDEO & PHOTOS</a>
+                </li>
+                <li class="leftSide">
+                    <img src="../../public/Photos/WeatherIcon.png" alt="">
+                </li>
+                <li class="leftSide">
+                    <a href="">WEATHER</a>
+                </li>
+                <li class="leftSide">
+                    <img src="../../public/Photos/SailingIcon.png" alt="">
+                </li>
+                <li class="leftSide">
+                    <a href="">SAILING RACE</a>
+                </li>
+                <li class="leftSide">
+                    <img src="../../public/Photos/RaceBookIcon.png" alt="">
+                </li>
+                <li class="leftSide">
+                    <a href="">RACE BOOK</a>
+                </li>
+            </ul>
+        </div>
+        <div class="box box9"></div>
+    </div>
+    <div class="SecondKont" id="app">
+
+        <div class="SecondBox SecondBox1"></div>
+        <div class="SecondBox SecondBox2"></div>
+        <div class="SecondBox SecondBox3"></div>
+        <div class="SecondBox SecondBox4"></div>
+        <div class="SecondBox SecondBox5">
+            <div class="SecondBoxInternal" v-for="data in News" :key = data.id>
+                <div class="SecondBoxInternal1">
+                    <p id="TanitimBaslik">
+                        BAU INTERNATIONAL
+                        <span style="font-style: italic">SAILING</span> CLUB
+                    </p>
+                    <p id="TanitimYazisi">
+                        Üç tarafı denizlerle çevrili olan ülkemizde hedefimiz; Türk Yelkenciliğini uluslararası boyutta geliştirmek, yelkenciği 7’den
+                        70’ e geniş kitlelere yaymak ve ülkemizde denizcilik kültürünün oluşmasını sağlamaktır.
+                    </p>
+                </div>
+                <div class="SecondBoxInternal2">
+                    <br>
+                    <br>
+                    <img style="max-width: 490px;max-height: 780px" :src="data[NewsID].NewsImage">
+                </div>
+                <div class="SecondBoxInternal3">
+                    <ul style="padding-top: 190px;">
+                        <li class="Numerator" v-on:click="SetId1">1</li>
+                        <li class="Numerator" v-on:click="SetId2">2</li>
+                        <li class="Numerator" v-on:click="SetId3">3</li>
+                        <li class="Numerator" v-on:click="SetId4">4</li>
+                        <li class="Numerator" v-on:click="SetId5">5</li>
+                    </ul>
+                </div>
+                <div class="SecondBoxInternal4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p id="NewsHead">
+                        {{data[NewsID].NewsHeader}}
+                        <br>
+                        <span> {{data[NewsID]['HeaderDetail']}}</span>
+                    </p>
+                    <p class="NewsContent">
+                        {{data[NewsID]['NewsContent']}}
+                        <br>{{data[NewsID]['NewsSecondParag']}}
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="SecondBox SecondBox6">
+            <img src="../../public/Photos/SideRectangle.png" style="position: relative;
+            left: 113px;
+            top: 255px;">
+            <p class="RightSideText">
+                INTERNATIONAL SAILING CLUB
+            </p>
+        </div>
+        <div class="SecondBox SecondBox7"></div>
+        <div class="SecondBox SecondBox8"></div>
+        <div class="SecondBox SecondBox9"></div>
+
+    </div>
+    <div class="ThirdKont">
+        <div class="LonelyDiv">
+
+        </div>
+    </div>
+    <div class="ForthKont">
+        <div class="ForthBox1">
+            <img src="../../public/Photos/SideRectangle.png" style="position: relative;
+                left: 254px;
+                top: 10px;">
+            <p class="LeftSideText">
+                INTERNATIONAL SAILING CLUB
+            </p>
+            <img src="../../public/Photos/NextBackButton.png" class="BackButton">
+        </div>
+        <div class="ForthBox2"></div>
+        <div class="ForthBox3"></div>
+        <div class="ForthBox4">
+            <p class="ForthHeader">
+                RACE & ADVENTURE
+            </p>
+            <p class="ForthAltHeader">
+                SAILING CHAMPIONS LEAGUE
+            </p>
+            <p class="ForthContent">
+                The Notice of Race that provides all the information about the Superyacht Regatta is online, available on the Home Page and
+                the event page. The Superyacht Regatta is one of the most important events in the Mediterranean and is scheduled
+                in Porto Cervo from 5th to 9th June. Four days of ...
+            </p>
+            <p class="ReadMore">
+                <a href="">READ MORE</a>
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="GaleriParag">BAU INTERNATIONAL SAILING CLUB</p>
+            <br>
+            <div class="owl-carousel">
+                <div>
+                    <img src="../../public/Photos/Photo5.jpg" class="SliderImage">
+                </div>
+                <div>
+                    <img src="../../public/Photos/Photo6.jpg" class="SliderImage">
+                </div>
+                <div>
+                    <img src="../../public/Photos/Photo7.jpg" class="SliderImage">
+                </div>
+                <div>
+                    <img src="../../public/Photos/Photo8.jpg" class="SliderImage">
+                </div>
+            </div>
+        </div>
+        <div class="ForthBox5">
+            <img src="../../public/Photos/NextBackButton.png" class="NextButton">
+        </div>
+        <div class="ForthBox6"></div>
+        <div class="ForthBox7"></div>
+        <div class="ForthBox8"></div>
+        <div class="ForthBox9"></div>
+    </div>
+    <div class="LastKont">
+        <div class="BiggestOne">
+
+        </div>
+    </div>
+
+    </div>
+</template>
+<script>
+import Menu from "./Menu.vue"
+import Header from "./Header.vue"
+export default {
+  name: "Home",
+  data() {
+    return {
+      News: [],
+      Slider : [],
+      NewsID: 1,
+      SliderID : 1
+    };
+  },
+  created() {
+    fetch('../public/MainSlider.json')
+            .then((res) => {
+                return res.json();
+            })
+            .then((res) => {
+                this.Slider = res.Slider;
+            }),
+    fetch("../public/News.json")
+      .then(res => {
+        return res.json();
+      })
+      .then(res => {
+        this.News = res.News;
+      });
+  },
+  components: {
+    Menu,
+    Header
+  },
+  methods:{
+            SetId1 : function(){
+                this.NewsID = 1;
+            },
+            SetId2 : function(){
+                this.NewsID = 2;
+            },
+            SetId3 : function(){
+                this.NewsID = 3;
+            },
+            SetId4 : function(){
+                this.NewsID = 1;
+            },
+            SetId5 : function(){
+                this.NewsID = 2;
+            },
+            prevPic : function(){
+                if(this.SliderID == 1){
+                    this.SliderID = 1;
+                }else{
+                    this.SliderID = this.SliderID - 1;
+                }
+                
+            },
+            nextPic : function(){
+                if(this.SliderID == 5){
+                    this.SliderID = 1;
+                }else{
+                    this.SliderID = this.SliderID + 1;
+                }
+            }
+            
+            
+
+    }
+        
+};
+</script>
+

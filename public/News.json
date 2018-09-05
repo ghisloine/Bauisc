@@ -1,0 +1,30 @@
+{
+    "News": [
+        {
+            "1": {
+                "NewsHeader": "Özel Tasarım KUPA!",
+                "HeaderDetail": "BAU Spring Trophy 2016!",
+                "NewsContent": "Trofe yarışlarının sonunda yer alan BAU İlkbahar Trofesi Ödül Töreni, 10 Mayıs günü BAU’nun İstanbul Boğazı’na hakim terasında etkinlikler ve konserler düzenlenecek kazanan ekipler ödüllerine kavuşacaktır. Aynı zamanda Trofenin genel klasman birincisine verilecek olan kupanın tasarımını endüstriyel tasarım bölümü proje dersi kapsamında BAU endüstriyel tasarım öğrencileri gerçekleştirildi",
+                "NewsSecondParag": "Geçtiğimiz günlerde yapılan jüri ile birinci olan tasarımın sahibi Melis Öztürk isimli 4. Sınıf öğrencisi oldu..",
+                "NewsMainContent" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque placerat est, et feugiat mi vehicula convallis. Suspendisse ex est, cursus nec imperdiet et, convallis vel arcu. Phasellus pulvinar, dolor vitae tincidunt eleifend, ex enim tincidunt nibh, nec consequat justo mauris non nisi. Etiam purus ligula, vehicula quis condimentum ac, commodo non nunc. In magna lorem, interdum interdum euismod eu, iaculis vel velit. Vivamus in ullamcorper libero. Phasellus ullamcorper vitae magna a congue. Nullam ligula tellus, posuere ac augue eu, sollicitudin venenatis quam. Nullam in pharetra risus, vitae euismod arcu. Sed euismod nunc ac malesuada maximus. Integer malesuada est sed mauris aliquam, eu condimentum nulla tincidunt. Etiam et magna metus. Aliquam sed cursus ante, molestie dictum elit.",
+                "NewsImage": "/../public/Photos/News2.png" 
+            },
+            "2": {
+                "NewsHeader": "Lorem ipsum dolor sit amet",
+                "HeaderDetail": "consectetur adipiscing elit",
+                "NewsContent": "Praesent maximus, velit et lobortis pretium, ante tellus porta nunc, vitae dictum diam eros a massa. Phasellus ut diam sapien. Sed quis libero mauris. Cras maximus turpis et ante lacinia, a accumsan tortor finibus. In eu dictum nulla, non rutrum felis. Nam lectus odio, varius in nisl et,",
+                "NewsSecondParag": "Iaculis finibus risus. Sed facilisis feugiat turpis vel rhoncus. Nam",
+                "NewsMainContent" : "Etiam vel diam quis lectus tincidunt pretium. Quisque finibus mi in sem tempus commodo. Vivamus varius tempus metus, vitae congue lorem. Proin placerat enim nunc, mattis imperdiet leo sodales sed. Sed ultrices elementum sapien, eget eleifend leo eleifend sed. Maecenas quis erat nulla. Curabitur ipsum odio, sagittis vitae nibh eu, lacinia ultricies diam. Duis sed justo eu sapien maximus sodales. Vivamus ut erat fermentum, tempus justo in, cursus turpis. Nam at nibh tincidunt, congue mauris ac, interdum ligula. Vestibulum gravida metus vitae ex euismod luctus. Phasellus dui sem, sollicitudin sed lacinia nec, ullamcorper nec risus.",
+                "NewsImage": "/../public/Photos/Photo9.png"
+            },
+            "3": {
+                "NewsHeader": "Duis ac cursus est, sed tempor magna",
+                "HeaderDetail": "Fusce arcu augue, tempus ac dictum a, malesuada at odio",
+                "NewsContent": "Sed id auctor ex, sed cursus enim. Etiam tempus sodales massa, vel pretium tellus viverra ut. In commodo tempor nibh, ut congue mi ultricies cursus. Nulla facilisi. Nam venenatis ante in nibh volutpat tempus. Vestibulum eu luctus eros. Vivamus eros augue, maximus sed interdum eget, dignissim sed odio",
+                "NewsSecondParag": "Curabitur cursus odio vel semper luctus. In tempus sed dolor vel volutpat. Fusce varius massa sed condimentum condimentum. Morbi turpis nibh, finibus et ante a, sodales sollicitudin quam. Proin lacinia tempus est. ",
+                "NewsMainContent" : "Sed laoreet lectus nec sapien fermentum, non tincidunt erat molestie. Ut eu urna sem. Duis laoreet egestas velit, non ultricies quam pulvinar eget. Nullam vulputate tellus sed tristique auctor. Vivamus condimentum posuere lectus at dignissim. Ut placerat augue nec risus tincidunt bibendum. Aliquam vehicula dui eu diam varius faucibus. Quisque quis felis nisl. Vestibulum eget ultrices mi. Aenean tincidunt lacus eget est semper, eu malesuada libero sollicitudin.",
+                "NewsImage": "/../public/Photos/Photo7.jpg"
+            }
+        }
+    ]
+}
