@@ -13,7 +13,7 @@
         <div class="box box6" id="app2" >
             <div v-for='data in Slider' :key="data.id">
 
-                <p>{{data[SliderID]['Header']}}
+                <p id="HeaderInfo">{{data[SliderID]['Header']}}
                     <br>{{data[SliderID]['HeaderDate']}}</p>
                 <img id="Slider" :src="data[SliderID].ImageURL">
 

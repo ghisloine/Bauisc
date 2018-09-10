@@ -25,12 +25,12 @@
                  -->
             </ul>
             
-                <p class="BAU">BAU <span style="font-weight:100;font-style:italic">ISC</span></p>
+                <router-link to = "/"><p class="BAU">BAU<span style="font-weight:100;font-style:italic">ISC</span></p></router-link>
             
             
     </div>
 </template>
-<style>
+<style scoped>
 .BAU{
     font-size: 25px;
     letter-spacing: -1px;

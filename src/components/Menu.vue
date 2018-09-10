@@ -19,7 +19,7 @@
                         </h1>
                     </li>
                     <li class="outerList">
-                        <h1 class="outerList">Hakkımızda</h1>
+                        <router-link to = "/hakkimizda"><h1 class="outerList">Hakkımızda</h1></router-link>
                     </li>
                     <li class="outerList">
                         <h1 class="outerList">Vizyon-Misyon</h1>
@@ -37,7 +37,7 @@
             </div>
 
             <div class="col-sm-2">
-                <h1>HABERLER</h1>>
+                <router-link to = "/News"><h1>HABERLER</h1></router-link>
             </div>
 
             <div class="col-sm-2">
@@ -178,6 +178,7 @@ export default {
             document.getElementById("SliderLeftArrow").style.visibility = "visible"
             document.getElementById("SliderRightArrow").style.visibility = "visible"
             document.getElementById("rotateRight").style.visibility  = "visible";
+            document.getElementById("HeaderInfo").style.visibility = "visible"
             console.log("Hello Form Menu Close");
         },
         openNav(){
@@ -189,6 +190,7 @@ export default {
             document.getElementById("SliderLeftArrow").style.visibility = "hidden"
             document.getElementById("SliderRightArrow").style.visibility = "hidden"
             document.getElementById("rotateRight").style.visibility  = "hidden";
+            document.getElementById("HeaderInfo").style.visibility = "hidden"
             console.log("Hello From Open NAV")
     }
   },

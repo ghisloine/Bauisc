@@ -6,6 +6,7 @@ import Home from './components/Home.vue'
 import News from './components/News.vue'
 import NotFound from './components/NotFound.vue'
 import NewsDetail from './components/NewsDetail.vue'
+import AboutUs from './components/AboutUs.vue'
 
 Vue.use(VueRouter)
 
@@ -14,6 +15,10 @@ const router = new VueRouter({
     {
       path: '/',
       component: Home
+    },
+    {
+      path: '/hakkimizda',
+      component : AboutUs
     },
     {
       path: '/News', component: News,
