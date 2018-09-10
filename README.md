@@ -1,4 +1,4 @@
-# bauisc
+# BAU International Sailing Club Website
 
 > A Vue.js project
 
