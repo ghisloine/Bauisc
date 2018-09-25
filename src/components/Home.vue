@@ -8,14 +8,14 @@
         </div>
         <div class="box box4"></div>
         <div class="box box5">
-            <img src="../../public/Photos/Logo.png" style="padding-top: 360px;">
+            <img src="../../public/Photos/Logo.png" style="padding-top: 360px;" data-aos="fade-down">
         </div>
         <div class="box box6" id="app2" >
             <div v-for='data in Slider' :key="data.id">
 
-                <p id="HeaderInfo">{{data[SliderID]['Header']}}
+                <p id="HeaderInfo" data-aos="fade-right">{{data[SliderID]['Header']}}
                     <br>{{data[SliderID]['HeaderDate']}}</p>
-                <img id="Slider" :src="data[SliderID].ImageURL">
+                <img id="Slider" :src="data[SliderID].ImageURL" data-aos="fade-left">
 
                 <img src="../../public/Photos/SliderBack2.png" id="SliderBack">
                 <img src="../../public/Photos/RotationKadran.png" id="RotationKadran">
@@ -24,8 +24,8 @@
 
                 <div class="rotateRight" id="rotateRight">
 
-                    <p class="Index">0{{SliderID}}</p>
-                    <p class="Total">05</p>
+                    <p class="Index animated fadeInDown">0{{SliderID}}</p>
+                    <p class="Total animated fadeInDown">05</p>
 
                 </div>
 
@@ -36,7 +36,8 @@
         </div>
         <div class="box box7"></div>
         <div class="box box8">
-            <ul>
+            <!-- 
+                <ul>
                 <li class="leftSide">
                     <img src="../../public/Photos/VideoIcon.png" alt="">
                 </li>
@@ -62,6 +63,7 @@
                     <a href="">RACE BOOK</a>
                 </li>
             </ul>
+             -->
         </div>
         <div class="box box9"></div>
     </div>
@@ -73,12 +75,12 @@
         <div class="SecondBox SecondBox4"></div>
         <div class="SecondBox SecondBox5">
             <div class="SecondBoxInternal" v-for="data in News" :key = data.id>
-                <div class="SecondBoxInternal1">
-                    <p id="TanitimBaslik">
+                <div class="SecondBoxInternal1" >
+                    <p id="TanitimBaslik" data-aos = "fade-down" data-aos-delay="500">
                         BAU INTERNATIONAL
                         <span style="font-style: italic">SAILING</span> CLUB
                     </p>
-                    <p id="TanitimYazisi">
+                    <p id="TanitimYazisi" data-aos = "fade-down" data-aos-delay="500">
                         Üç tarafı denizlerle çevrili olan ülkemizde hedefimiz; Türk Yelkenciliğini uluslararası boyutta geliştirmek, yelkenciği 7’den
                         70’ e geniş kitlelere yaymak ve ülkemizde denizcilik kültürünün oluşmasını sağlamaktır.
                     </p>
@@ -86,7 +88,7 @@
                 <div class="SecondBoxInternal2">
                     <br>
                     <br>
-                    <img style="max-width: 490px;max-height: 780px" :src="data[NewsID].NewsImage">
+                    <img style="max-width: 490px;max-height: 780px" :src="data[NewsID].NewsImage" data-aos = "fade-right" data-aos-delay="500">
                 </div>
                 <div class="SecondBoxInternal3">
                     <ul style="padding-top: 190px;">
@@ -102,16 +104,21 @@
                     <br>
                     <br>
                     <br>
-                    <p id="NewsHead">
+                    <p id="NewsHead" data-aos = "fade-left">
                         {{data[NewsID].NewsHeader}}
                         <br>
                         <span> {{data[NewsID]['HeaderDetail']}}</span>
                     </p>
-                    <p class="NewsContent">
+                    <p class="NewsContent" data-aos = "fade-left">
                         {{data[NewsID]['NewsContent']}}
                         <br>{{data[NewsID]['NewsSecondParag']}}
+                        <br><br>
+                        <router-link :to=NewsLink>
+                        <p style="float:right">Read More...</p>
+                        </router-link>
                     </p>
                 </div>
+                
 
             </div>
         </div>
@@ -208,6 +215,8 @@
 <script>
 import Menu from "./Menu.vue"
 import Header from "./Header.vue"
+import AOS from 'aos';
+AOS.init();
 export default {
   name: "Home",
   data() {
@@ -238,6 +247,11 @@ export default {
     Menu,
     Header
   },
+  computed: {
+    NewsLink() {
+      return `/News/${this.NewsID}`;
+    }
+  },
   methods:{
             SetId1 : function(){
                 this.NewsID = 1;
@@ -249,10 +263,10 @@ export default {
                 this.NewsID = 3;
             },
             SetId4 : function(){
-                this.NewsID = 1;
+                this.NewsID = 4;
             },
             SetId5 : function(){
-                this.NewsID = 2;
+                this.NewsID = 5;
             },
             prevPic : function(){
                 if(this.SliderID == 1){
@@ -271,9 +285,9 @@ export default {
             }
             
             
-
+    
     }
-        
+    
 };
 </script>
 
