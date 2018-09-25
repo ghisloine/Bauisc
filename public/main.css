@@ -67,7 +67,7 @@ a:link {
 .box6 #SliderBack{
     position: absolute;
     top: 835px;
-    left: 360px;
+    left: 150px;
     overflow: hidden;
     z-index: 2;
     
@@ -75,14 +75,14 @@ a:link {
 .box6 #SliderLeftArrow{
     position: absolute;
     top: 882px;
-    left: 575px;   
+    left: 375px;   
     cursor: pointer;
     z-index: 3;
 }
 .box6 #SliderRightArrow{
     position: absolute;
     top: 882px;
-    left: 700px;
+    left: 500px;
     cursor: pointer;
     z-index: 3;
 }
@@ -124,13 +124,13 @@ a:link {
     transform: rotate(90deg);
     position: absolute;
     top: 892px;
-    left: 324px;
+    left: 165px;
     z-index: 3;
 }
 .box6 #RotationKadran{
     position: absolute;
     top: 890px;
-    left: 384px;
+    left: 225px;
     width: 43px;
     height: 1px;
     background-color: #999999;
@@ -163,7 +163,7 @@ a:link {
 .Kont{
     display: grid;
     grid-template-rows: 100px 850px 130px;
-    grid-template-columns: 70px 290px 1200px 340px;
+    grid-template-columns: 70px 155px 1200px 340px;
 }
 .sidenav {
     height: 100%;

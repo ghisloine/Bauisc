@@ -34,6 +34,4 @@ var owl = $('.owl-carousel');
         document.getElementById("SliderLeftArrow").style.visibility = "visible"
         document.getElementById("SliderRightArrow").style.visibility = "visible"
         document.getElementById("rotateRight").style.visibility  = "visible";
-    
-        
     }
