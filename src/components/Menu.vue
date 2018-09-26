@@ -22,10 +22,18 @@
                         <router-link to = "/hakkimizda"><h1 class="outerList">Hakkımızda</h1></router-link>
                     </li>
                     <li class="outerList">
+                        <h1 class="outerList">Tüzük</h1>
+                    </li>
+                    <li class="outerList">
                         <h1 class="outerList">Vizyon-Misyon</h1>
                     </li>
                     <li class="outerList">
                         <h1 class="outerList">Kurullar</h1>
+                        <ul>
+                            <li class="innerList"><a href="">Yönetim Kurulu</a></li>
+                            <li class="innerList"><a href="">Denetim Kurulu</a></li>
+                            <li class="innerList"><a href="">Disiplin Kurulu</a></li>
+                        </ul>
                     </li>
                     <li class="outerList">
                         <h1 class="outerList">Ekip</h1>
@@ -37,7 +45,14 @@
             </div>
 
             <div class="col-sm-2">
-                <router-link to = "/News"><h1>HABERLER</h1></router-link>
+                <h1>YARIŞLAR</h1>
+                <li class="outerList">
+                        <h1 class="outerList" style="text-align:center">BAU Spring Trophy</h1>
+                    </li>
+                    <li class="outerList">
+                        <h1 class="outerList" style="text-align:center">Unicon Regatta</h1>
+                    </li>
+                
             </div>
 
             <div class="col-sm-2">
@@ -89,33 +104,6 @@
                         </li>
                         <li class="innerList">
                             <a href="">BOT</a>
-                        </li>
-                    </ul>
-                    <h1 class="outerList">Yelken Ve Deniz</h1>
-                    <ul>
-                        <li class="innerList">
-                            <a href="">Yelken Tarihi</a>
-                        </li>
-                        <li class="innerList">
-                            <a href="">Denizcilik Bağları</a>
-                        </li>
-                        <li class="innerList">
-                            <a href="">Denizcilik Terimleri</a>
-                        </li>
-                        <li class="innerList">
-                            <a href="">Yelken Yarışları</a>
-                        </li>
-                        <li class="innerList">
-                            <a href="">Americas Cup</a>
-                        </li>
-                        <li class="innerList">
-                            <a href="">Vendee Globe</a>
-                        </li>
-                        <li class="innerList">
-                            <a href="">VOR</a>
-                        </li>
-                        <li class="innerList">
-                            <a href="">Fastnet Race</a>
                         </li>
                     </ul>
                     <ul>
@@ -205,6 +193,7 @@ export default {
   width: 70px;
   background: url("../../public/Photos/Menu.png");
   cursor: pointer;
+  position: fixed;
 }
 
 a:link {

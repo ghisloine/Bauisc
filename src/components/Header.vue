@@ -1,7 +1,9 @@
 <template>
-    <div>
-            <ul style="padding-left : 0px">
-                <li>
+    <div>   
+                <router-link to = "/"><p class="BAU">BAU<span style="font-weight:100;font-style:italic">ISC</span></p></router-link>
+                <!--
+                <ul style="position:absolute;left:200px">
+                    <li>
                     <a href="https://tr-tr.facebook.com/bauisc/" target="_blank" class="SocialMedia">Facebook</a>
                 </li>
                 <li>//</li>
@@ -16,17 +18,14 @@
                 <li>
                     <a href="" class="SocialMedia">Youtube</a>
                 </li>
-                <!--
+                
                     <li id="Language">TR</li>
                 <li id="Language">
                     <img src="../../public/Photos/TrEngLine.png" alt="">
                 </li>
                 <li id="Language">EN</li>
-                 -->
-            </ul>
-            
-                <router-link to = "/"><p class="BAU">BAU<span style="font-weight:100;font-style:italic">ISC</span></p></router-link>
-            
+                     
+                </ul> -->  
             
     </div>
 </template>
@@ -39,6 +38,7 @@
     font-family: "Roboto";
     font-weight: 800;
     position: absolute;
-    left: 909px;
+    left: 930px;
+    top: 20px;
     }
 </style>

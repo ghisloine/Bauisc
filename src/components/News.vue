@@ -34,7 +34,10 @@
       <div id="OuterEmptyLeft"></div>
       <div v-for="news in News" :key="news.id">
         <p class="NewsHeader">{{news[id]['NewsHeader']}}</p>
-        <p class="NewsMainContent">{{news[id]['NewsMainContent']}}</p><br>
+        <p class="NewsMainContent">{{news[id]['NewsSecondParag']}}</p>
+        <p class="NewsMainContent">{{news[id]['NewsThirdParag']}}</p>
+        <p class="NewsMainContent">{{news[id]['NewsFourParag']}}</p>
+        <br>
         <router-link :to=NewsLink>
           <p style="text-align : center">Read More</p>
         </router-link>
@@ -79,7 +82,7 @@
             </li>
           </ul>
           <ul>
-            <li><img :src="news[id + 2]['NewsImage']" class="GalleryShortPic"></li>
+            <li><img :src="news[id + 1]['NewsImage']" class="GalleryShortPic"></li>
             <li>
               <ul>
               <li>18.08.2018</li>

@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import AOS from 'aos'
+import "aos/dist/aos.css"
 
 import Home from './components/Home.vue'
 import News from './components/News.vue'
@@ -39,5 +41,8 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   render: h => h(App),
-  router
+  router,
+  created(){
+    AOS.init();
+  }
 })

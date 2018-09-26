@@ -22,8 +22,18 @@
       <div class="MainTwo">
             <div id="OuterEmptyLeft"></div>
             <div v-for="news in News" :key="news.id">
-                <p class="NewsHeader">{{news[$route.params.id]['NewsHeader']}}</p>
-                <p class="NewsMainContent">{{news[$route.params.id]['NewsMainContent']}}</p>
+                
+                <p class="NewsHeader">{{news[$route.params.id]['NewsHeader']}}</p><br>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsContent']}}</p>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsSecondParag']}}</p>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsThirdContent']}}</p>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsFourParag']}}</p>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsFiveParag']}}</p>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsSixParag']}}</p>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsSevenParag']}}</p>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsEightParag']}}</p>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsNineParag']}}</p>
+                <p class="NewsMainContent">{{news[$route.params.id]['NewsTenParag']}}</p>
             </div>
             <div id="OuterEmptyRight"></div>
         </div>
