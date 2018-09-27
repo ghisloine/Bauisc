@@ -323,7 +323,7 @@ export default {
   grid-template-rows: 2380px;
 }
 .MainFive #LonelyCont{
-  background-image: url(../../public/Photos/NewsFooter.png);
+  background-image: url(../../public/Photos/LastPart.png);
   background-repeat: no-repeat;
 }
 </style>
