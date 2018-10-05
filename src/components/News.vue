@@ -51,14 +51,14 @@
           <ul>
             <ul>
               <li>
-                <img :src="news[id]['NewsImage']" class="GalleryShortPic">
+                <img :src="news[id]['NewsSmallImage1']" class="GalleryShortPic">
               </li>
             </ul>
             <ul>
-              <li>18.08.2018</li>
-              <li>BURAK</li>
-              <li style="font-style:italic;color:grey;">TAGTEKIN</li>
-              <li>RACE TODAY</li>
+              <li>{{news[id]['SmallImageDate']}}</li>
+              <li>{{news[id]['SmallImageWriterName']}}</li>
+              <li style="font-style:italic;color:grey;">{{news[id]['SmallImageWriterSurname']}}</li>
+              <li>{{news[id]['SmallImageHead']}}</li>
             </ul>
           </ul>
         </div>
@@ -72,23 +72,23 @@
         <ul style="float:right">
         <ul id="PhotoDetail2">
           <ul>
-            <li style="float:right"><img :src="news[id + 1]['NewsImage']" class="GalleryShortPic"></li>
+            <li style="float:right"><img :src="news[id]['NewsSmallImage2']" class="GalleryShortPic"></li>
             <li style="float:right"><ul>
-              <li>18.08.2018</li>
-              <li>BURAK</li>
-              <li style="font-style:italic;color:grey;">TAGTEKIN</li>
-              <li>RACE TODAY</li>
+              <li>{{news[id]['SmallImageDate']}}</li>
+              <li>{{news[id]['SmallImageWriterName']}}</li>
+              <li style="font-style:italic;color:grey;">{{news[id]['SmallImageWriterSurname']}}</li>
+              <li>{{news[id]['SmallImageHead']}}</li>
             </ul>
             </li>
           </ul>
           <ul>
-            <li><img :src="news[id + 1]['NewsImage']" class="GalleryShortPic"></li>
+            <li><img :src="news[id]['NewsSmallImage3']" class="GalleryShortPic"></li>
             <li>
               <ul>
-              <li>18.08.2018</li>
-              <li>BURAK</li>
-              <li style="font-style:italic;color:grey;">TAGTEKIN</li>
-              <li>RACE TODAY</li>
+              <li>{{news[id]['SmallImageDate']}}</li>
+              <li>{{news[id]['SmallImageWriterName']}}</li>
+              <li style="font-style:italic;color:grey;">{{news[id]['SmallImageWriterSurname']}}</li>
+              <li>{{news[id]['SmallImageHead']}}</li>
             </ul>
             </li>
           </ul>

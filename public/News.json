@@ -6,7 +6,14 @@
                 "HeaderDetail": "BAU Spring Trophy 2016!",
                 "NewsContent": "Trofe yarışlarının sonunda yer alan BAU İlkbahar Trofesi Ödül Töreni, 10 Mayıs günü BAU’nun İstanbul Boğazı’na hakim terasında etkinlikler ve konserler düzenlenecek kazanan ekipler ödüllerine kavuşacaktır. Aynı zamanda Trofenin genel klasman birincisine verilecek olan kupanın tasarımını endüstriyel tasarım bölümü proje dersi kapsamında BAU endüstriyel tasarım öğrencileri gerçekleştirildi",
                 "NewsSecondParag": "Geçtiğimiz günlerde yapılan jüri ile birinci olan tasarımın sahibi Melis Öztürk isimli 4. Sınıf öğrencisi oldu..",
-                "NewsImage": "/../public/Photos/News2.png" 
+                "NewsImage": "/../public/Photos/News2.png",
+                "NewsSmallImage1" : "",
+                "NewsSmallImage2" : "",
+                "NewsSmallImage3" : "",
+                "SmallImageWriterName" : "",
+                "SmallImageWriterSurname" : "",
+                "SmallImageDate" : "",
+                "SmallImageHead" : ""
             },
             "2": {
                 "NewsHeader": "BAU Spring Trophy 2018",
@@ -21,7 +28,15 @@
                 "NewsEightParag":"Yarış sonrası Kalamış Marinada kurulan Etkinlik Alanına gelen yarışçılara, Sultanahmet Köftecisinin lezzetli köfteleriyle birlikte BAU MAP Orkestrasının müzikleri eşliğinde ödülleri takdim edildi. Ayrıca Sportworks sponsorluğunda gerçekleştirilen hediye çekilişleriyle farklı ekiplerden birçok kişiye polarlar ve yelken ceketleri dağıtıldı.",
                 "NewsNineParag":"Katılan yarışçıların, organizasyon duydukları memnuniyet mesajları ise; gecesini gündüzüne katarak haftalardır çalışan organizasyon ekibi için büyük bir başarı göstergesi oldu.",
                 "NewsTenParag":"",
-                "NewsImage": "/../public/Photos/Photo9.png"
+                "NewsImage": "/../public/Photos/SpringTrophy1.jpg",
+                "NewsSmallImage1" : "/../public/Photos/SpringTrophy2.jpg",
+                "NewsSmallImage2" : "/../public/Photos/SpringTrophy3.jpg",
+                "NewsSmallImage3" : "/../public/Photos/SpringTrophy4.jpg",
+                "SmallImageWriterName" : "KAYIHAN",
+                "SmallImageWriterSurname" : "HASIRCI",
+                "SmallImageDate" : "23-03-2018",
+                "SmallImageHead" : "SPRING TROPHY"
+                
             },
             "3": {
                 "NewsHeader": "Kupa Teslim Töreni ve Dümenci Toplantısı Gerçekleştirildi!",
@@ -36,10 +51,17 @@
                 "NewsEightParag":"",
                 "NewsNineParag":"",
                 "NewsTenParag":"",
-                "NewsImage": "/../public/Photos/Photo7.jpg"
+                "NewsImage": "/../public/Photos/KupaTeslim1.jpg",
+                "NewsSmallImage1" : "/../public/Photos/KupaTeslim2.jpg",
+                "NewsSmallImage2" : "/../public/Photos/KupaTeslim3.jpg",
+                "NewsSmallImage3" : "/../public/Photos/KupaTeslim4.jpg",
+                "SmallImageWriterName" : "DİLARA",
+                "SmallImageWriterSurname" : "SAVUT",
+                "SmallImageDate" : "",
+                "SmallImageHead" : ""
             },
             "4" : {
-                "NewsHeader" : "Tekneler Bu Kez Çocuklar için Burak Tagtekin Açtı!",
+                "NewsHeader" : "Tekneler Bu Kez Çocuklar için Yelken Açtı!",
                 "HeaderDetail" : "",
                 "NewsContent" : "Bahçeşehir Üniversitesi Uluslararası Yelken Kulübü (BAUISC) tarafından bu yıl ikincisi gerçekleştirilen BAU İlkbahar Trofesinde (Trofe) tekneler VELA Kupasını kazanmak için şampiyonluk mücadelesi vermeye devam ediyor.",
                 "NewsSecondParag" : "Düşük ve sürekli yön değiştiren rüzgar sebebiyle 22 Nisan Pazar günü saat 12.00’de start düdüğü sadece IRC-4 ve Gezgin sınıfları için çaldı. Dakikalar süren bekleyişin ardından 5-7 knot arası gelen esintiyi değerlendiren Yarış Komitesi IRC-0-1-2-3 sınıfları için de orsa-pupa parkurunda start düdüğünü çaldı. 3.etap düşük rüzgarda gerçekleşen tek yarışla sonlanırken Overall mücadelesi kızışmaya başlamıştı.",
@@ -51,7 +73,14 @@
                 "NewsEightParag":"",
                 "NewsNineParag":"",
                 "NewsTenParag":"",
-                "NewsImage" : ""
+                "NewsImage" : "/../public/Photos/Kids1.jpg",
+                "NewsSmallImage1" : "/../public/Photos/Kids2.jpg",
+                "NewsSmallImage2" : "/../public/Photos/Kids3.jpg",
+                "NewsSmallImage3" : "/../public/Photos/Kids4.jpg",
+                "SmallImageWriterName" : "BURAK",
+                "SmallImageWriterSurname" : "TAGTEKIN",
+                "SmallImageDate" : "23-04-2018",
+                "SmallImageHead" : "DÜNYA ÇOCUKLARI"
             },
             "5" : {
                 "NewsHeader" : "BAUISC Turkcell Platinum Bosphorus Cup Deniz Organizasyonunu Üstlendi!",
@@ -66,7 +95,14 @@
                 "NewsEightParag":"",
                 "NewsNineParag":"",
                 "NewsTenParag":"",
-                "NewsImage" : ""
+                "NewsImage" : "/../public/Photos/Turkcell1.jpg",
+                "NewsSmallImage1" : "/../public/Photos/Turkcell2.jpg",
+                "NewsSmallImage2" : "/../public/Photos/Turkcell3.jpg",
+                "NewsSmallImage3" : "/../public/Photos/Turkcell4.jpg",
+                "SmallImageWriterName" : "BURAK",
+                "SmallImageWriterSurname" : "TAGTEKIN",
+                "SmallImageDate" : "29-09-2018",
+                "SmallImageHead" : "TURKCELL BOSPHROUS CUP"
             },
             "6" : {
                 "NewsHeader" : "SailingBAU’dan BAUISC’ye bir Serüven",
@@ -81,7 +117,14 @@
                 "NewsEightParag":"",
                 "NewsNineParag":"",
                 "NewsTenParag":"",
-                "NewsImage" : ""
+                "NewsImage" : "",
+                "NewsSmallImage1" : "",
+                "NewsSmallImage2" : "",
+                "NewsSmallImage3" : "",
+                "SmallImageWriterName" : "",
+                "SmallImageWriterSurname" : "",
+                "SmallImageDate" : "",
+                "SmallImageHead" : ""
             }
         }
     ]

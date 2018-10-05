@@ -2,9 +2,9 @@
     "Slider" : [
         {
             "1":{
-                "Header":"Başarıya yelken açıldı!",
-                "HeaderDate":"Trofe 2018",
-                "ImageURL":"../public/Photos/Slider1.png"
+                "Header":"",
+                "HeaderDate":"",
+                "ImageURL":"../public/Photos/MainPhoto.jpg"
             },
             "2":{
                 "Header":"Lorem ipsum dolor sit amet",
