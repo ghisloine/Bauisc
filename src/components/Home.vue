@@ -148,56 +148,60 @@
             <p class="LeftSideText">
                 INTERNATIONAL SAILING CLUB
             </p>
-            <img src="../../public/Photos/NextBackButton.png" class="BackButton">
         </div>
         <div class="ForthBox2"></div>
         <div class="ForthBox3"></div>
-        <div class="ForthBox4">
+        <div class="ForthBox4" v-for="Race in Races" :key="Race.id">
             <p class="ForthHeader">
                 RACE & ADVENTURE
             </p>
             <p class="ForthAltHeader">
-                SAILING CHAMPIONS LEAGUE
+                {{Race[RaceID]['Header']}}
             </p>
             <p class="ForthContent">
-                The Notice of Race that provides all the information about the Superyacht Regatta is online, available on the Home Page and
-                the event page. The Superyacht Regatta is one of the most important events in the Mediterranean and is scheduled
-                in Porto Cervo from 5th to 9th June. Four days of ...
+                {{Race[RaceID]['Content']}}
             </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <p class="ReadMore">
-                <a href="">READ MORE</a>
+               <a :href = "Race[RaceID]['URL']" target="_blank">READ MORE</a>
             </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            
+            
 
             <br>
             <br>
             <br>
-            <br>
-            <br>
+            
             <p class="GaleriParag">BAU INTERNATIONAL SAILING CLUB</p>
             <br>
-            <div class="owl-carousel">
-                <div>
-                    <img src="../../public/Photos/Photo5.jpg" class="SliderImage">
-                </div>
-                <div>
-                    <img src="../../public/Photos/Photo6.jpg" class="SliderImage">
-                </div>
-                <div>
-                    <img src="../../public/Photos/Photo7.jpg" class="SliderImage">
-                </div>
-                <div>
-                    <img src="../../public/Photos/Photo8.jpg" class="SliderImage">
-                </div>
-            </div>
+            <div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" v-on:click="SpringTrophy" src="../../public/Photos/SpringTrophy.png" style="cursor:pointer;max-height:230px">
+    <div class="card-body">
+      <h5 class="card-title text-center">BAU Spring Trophy</h5>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" v-on:click="BosphorusCup" src="../../public/Photos/BosphorusCup.jpg" style="cursor:pointer;max-height:230px">
+    <div class="card-body">
+      <h5 class="card-title text-center">Turkcell Platinum Bosphorus Cup</h5>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" v-on:click="UniconRegatta" src="../../public/Photos/UniconRegatta.png" style="cursor:pointer;max-height:230px">
+    <div class="card-body">
+      <h5 class="card-title text-center">Unicon Regatta</h5>
+    </div>
+  </div>
+  
+</div>
         </div>
         <div class="ForthBox5">
-            <img src="../../public/Photos/NextBackButton.png" class="NextButton">
         </div>
         <div class="ForthBox6"></div>
         <div class="ForthBox7"></div>
@@ -223,8 +227,10 @@ export default {
     return {
       News: [],
       Slider : [],
+      Races : [],
       NewsID: 1,
-      SliderID : 1
+      SliderID : 1,
+      RaceID : 1
     };
   },
   created() {
@@ -236,12 +242,19 @@ export default {
                 this.Slider = res.Slider;
             }),
     fetch("../public/News.json")
-      .then(res => {
-        return res.json();
-      })
-      .then(res => {
-        this.News = res.News;
-      });
+            .then(res => {
+                return res.json();
+            })
+            .then(res => {
+                this.News = res.News;
+            }),
+    fetch('../public/Races.json')
+            .then((res) => {
+                return res.json();
+            })
+            .then((res) => {
+                this.Races = res.Races;
+            })
   },
   components: {
     Menu,
@@ -282,10 +295,17 @@ export default {
                 }else{
                     this.SliderID = this.SliderID + 1;
                 }
+            },
+            SpringTrophy : function(){
+                this.RaceID = 1;
+            },
+            BosphorusCup : function(){
+                this.RaceID = 2;
+            },
+            UniconRegatta : function(){
+                this.RaceID = 3;
             }
             
-            
-    
     }
     
 };

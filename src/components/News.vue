@@ -14,7 +14,7 @@
       <div id="Empty"></div>
       <div id="Empty"></div>
       <div class="Slider">
-        <div><img src="../../public/Photos/Left.png" @click="Left"></div>
+        <div><img src="../../public/Photos/Left.png" @click="Left" style="cursor:pointer"></div>
         <div class="News">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div>
-          <img src="../../public/Photos/Right.png" @click="Right" class="RightButton">
+          <img src="../../public/Photos/Right.png" @click="Right" class="RightButton" style="cursor:pointer">
         </div>
       </div>
       <div></div>

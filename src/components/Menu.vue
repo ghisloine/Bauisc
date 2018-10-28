@@ -22,15 +22,18 @@
                         <router-link to = "/hakkimizda"><h1 class="outerList">Hakkımızda</h1></router-link>
                     </li>
                     <li class="outerList">
-                        <h1 class="outerList">Tüzük</h1>
+                        <router-link to = "/News"><h1 class="outerList">Haberler</h1></router-link>
                     </li>
                     <li class="outerList">
-                        <h1 class="outerList">Vizyon-Misyon</h1>
+                        <router-link to = "../../public/Files/Tuzuk.pdf" target = "_blank"><h1 class="outerList">Tüzük</h1></router-link>
+                    </li>
+                    <li class="outerList">
+                        <router-link to = "/Vizyon&Misyon"><h1 class="outerList">Vizyon-Misyon</h1></router-link>
                     </li>
                     <li class="outerList">
                         <h1 class="outerList">Kurullar</h1>
                         <ul>
-                            <li class="innerList"><a href="">Yönetim Kurulu</a></li>
+                            <router-link to = "/yonetimkurulu"><li class="innerList"><a href="">Yönetim Kurulu</a></li></router-link>
                             <li class="innerList"><a href="">Denetim Kurulu</a></li>
                             <li class="innerList"><a href="">Disiplin Kurulu</a></li>
                         </ul>
@@ -47,10 +50,10 @@
             <div class="col-sm-2">
                 <h1>YARIŞLAR</h1>
                 <li class="outerList">
-                        <h1 class="outerList" style="text-align:center">BAU Spring Trophy</h1>
+                        <a href = "https://www.springtrophy.com"><h1 class="outerList" style="text-align:center">BAU Spring Trophy</h1></a>
                     </li>
                     <li class="outerList">
-                        <h1 class="outerList" style="text-align:center">Unicon Regatta</h1>
+                        <a href="https://www.uniconregatta.com"><h1 class="outerList" style="text-align:center">Unicon Regatta</h1></a>
                     </li>
                 
             </div>
@@ -94,16 +97,16 @@
                     <h1 class="outerList">Kulüp Filosu</h1>
                     <ul>
                         <li class="innerList">
-                            <a href="">ŞAN-3</a>
+                            <router-link to= "/San3&4">ŞAN-3</router-link>
                         </li>
                         <li class="innerList">
-                            <a href="">ŞAN4</a>
+                            <router-link to = "/San3&4">ŞAN-4</router-link>
                         </li>
                         <li class="innerList">
-                            <a href="">GOLDEN TOY</a>
+                            <router-link to = "/GoldenToy">GOLDEN TOY</router-link>
                         </li>
                         <li class="innerList">
-                            <a href="">BOT</a>
+                            <router-link to = "/Bot">BOT</router-link>
                         </li>
                     </ul>
                     <ul>

@@ -47,6 +47,8 @@ export default {
   components: {
     Menu,
     Header
+  },scrollBehavior() {
+    return { x: 120, y: 220 };
   },
   created() {
     fetch("../public/News.json")

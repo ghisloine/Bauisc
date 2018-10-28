@@ -9,10 +9,18 @@ import News from './components/News.vue'
 import NotFound from './components/NotFound.vue'
 import NewsDetail from './components/NewsDetail.vue'
 import AboutUs from './components/AboutUs.vue'
+import YonetimKurulu from './components/YonetimKurulu.vue'
+import San from './components/San.vue'
+import GoldenToy from './components/GoldenToy.vue'
+import Bot from './components/Bot.vue'
+import VizyonMisyon from './components/VizyonMisyon.vue'
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
   routes: [
     {
       path: '/',
@@ -32,6 +40,26 @@ const router = new VueRouter({
     {
       path: '*',
       component: NotFound
+    },
+    {
+      path : '/yonetimkurulu',
+      component : YonetimKurulu
+    },
+    {
+      path : '/San3&4',
+      component : San
+    },
+    {
+      path : '/GoldenToy',
+      component : GoldenToy
+    },
+    {
+      path : '/Bot',
+      component : Bot
+    },
+    {
+      path : '/Vizyon&Misyon',
+      component : VizyonMisyon
     }
 
   ],
