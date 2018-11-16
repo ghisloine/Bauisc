@@ -181,19 +181,19 @@
             <br>
             <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" v-on:click="SpringTrophy" src="../../public/Photos/SpringTrophy.png" style="cursor:pointer;max-height:230px">
+    <img class="card-img-top" v-on:click="SpringTrophy" src="../../public/Photos/SpringTrophy.png" style="cursor:pointer;max-height:230px;max-width:378px">
     <div class="card-body">
       <h5 class="card-title text-center">BAU Spring Trophy</h5>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" v-on:click="BosphorusCup" src="../../public/Photos/BosphorusCup.jpg" style="cursor:pointer;max-height:230px">
+    <img class="card-img-top" v-on:click="BosphorusCup" src="../../public/Photos/BosphorusCup.jpg" style="cursor:pointer;max-height:230px;max-width:378px">
     <div class="card-body">
       <h5 class="card-title text-center">Turkcell Platinum Bosphorus Cup</h5>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" v-on:click="UniconRegatta" src="../../public/Photos/UniconRegatta.png" style="cursor:pointer;max-height:230px">
+    <img class="card-img-top" v-on:click="UniconRegatta" src="../../public/Photos/UniconRegatta.png" style="cursor:pointer;max-height:230px;max-width:378px">
     <div class="card-body">
       <h5 class="card-title text-center">Unicon Regatta</h5>
     </div>
@@ -312,14 +312,14 @@ export default {
 </script>
 <style >
 @media only screen and (max-width: 1200px) {
-    .box1{
-        background: #111;
+    body{
+        zoom:75%;
     }
-    .box5{
-        display: none;
-    }
-    .box7{
-        display: none;
-    }
+}
+.card{
+    max-width: 378px;
+}
+.card-deck{
+    flex-direction: unset;
 }
 </style>
