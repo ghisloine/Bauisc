@@ -1,18 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@media screen and(max-width:1280px){html{-webkit-transform: scale(0.75, 0.75); zoom: 0.75; zoom: 75%;}}
-@media screen and(max-width:960px){html{-webkit-transform: scale( 0.50); zoom: 0.50; zoom: 50%;}}
-@media screen and(max-width:475px){html{-webkit-transform: scale( 0.10); zoom: 0.10; zoom: 10%;}}
-@media only screen and (max-width: 600px) {
-    .box2{
-        background: #111;
-    }
-    .box5{
-        display: none;
-    }
-    .box7{
-        display: none;
-    }
-}
 .box{
     text-align: center;
     overflow: hidden;
@@ -500,3 +486,11 @@ a:link {
 .BiggestOne{
     background-image: url(./Photos/LastPart.png)
 }
+@media screen and(max-width:1280px){
+    body{
+        
+        display: none;
+    }
+}
+@media screen and(max-width:960px){html{-webkit-transform: scale( 0.50); zoom: 0.50; zoom: 50%;}}
+@media screen and(max-width:475px){html{-webkit-transform: scale( 0.10); zoom: 0.10; zoom: 10%;}}
