@@ -34,6 +34,16 @@ export default {
 }
 </script>
 <style scoped>
+@media only screen and (max-width:1200px){ 
+    #MainPart{
+        display: grid;
+        grid-template-columns: 1200px;
+        grid-template-rows: 100px 2050px;
+    }
+    #Lonely{
+        background-image: url(../../public/Photos/AboutUs.png);
+    }
+ }
 #Lonely{
     height: 2150px;
     width: 1900px;

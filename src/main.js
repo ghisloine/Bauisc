@@ -14,12 +14,11 @@ import San from './components/San.vue'
 import GoldenToy from './components/GoldenToy.vue'
 import Bot from './components/Bot.vue'
 import VizyonMisyon from './components/VizyonMisyon.vue'
-
 Vue.use(VueRouter)
 
 const router = new VueRouter({
   scrollBehavior() {
-    return { x: 0, y: 0 };
+    return { x: 50, y: 0 };
   },
   routes: [
     {
@@ -60,7 +59,8 @@ const router = new VueRouter({
     {
       path : '/Vizyon&Misyon',
       component : VizyonMisyon
-    }
+    },
+    
 
   ],
   mode: 'history'

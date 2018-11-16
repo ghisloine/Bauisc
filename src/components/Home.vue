@@ -11,13 +11,13 @@
             <img src="../../public/Photos/Logo.png" style="padding-top: 360px;" data-aos="fade-down">
         </div>
         <div class="box box6" id="app2" >
-            <div v-for='data in Slider' :key="data.id">
+            <img src="../../public/Photos/SliderBack2.png" id="SliderBack">
+            <div v-for='data in News' :key="data.id">
 
                 <p id="HeaderInfo" data-aos="fade-right">{{data[SliderID]['Header']}}
                     <br>{{data[SliderID]['HeaderDate']}}</p>
-                <img id="Slider" :src="data[SliderID].ImageURL" data-aos="fade-left">
+                <img id="Slider" :src="data[SliderID].NewsImage" data-aos="fade-left" class="responsive-img">
 
-                <img src="../../public/Photos/SliderBack2.png" id="SliderBack">
                 <img src="../../public/Photos/RotationKadran.png" id="RotationKadran">
                 <img src="../../public/Photos/LeftArrow.png" id="SliderLeftArrow" v-on:click="prevPic">
                 <img src="../../public/Photos/RightArrow.png" id="SliderRightArrow" v-on:click="nextPic">
@@ -229,7 +229,7 @@ export default {
       Slider : [],
       Races : [],
       NewsID: 1,
-      SliderID : 1,
+      SliderID : 3,
       RaceID : 1
     };
   },
@@ -310,4 +310,16 @@ export default {
     
 };
 </script>
-
+<style >
+@media only screen and (max-width: 1200px) {
+    .box1{
+        background: #111;
+    }
+    .box5{
+        display: none;
+    }
+    .box7{
+        display: none;
+    }
+}
+</style>

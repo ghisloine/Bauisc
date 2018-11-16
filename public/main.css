@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@media scrren and(max-width:1280px){html{-moz-transform: scale(0.75, 0.75); zoom: 0.75; zoom: 75%;}}
-@media scrren and(max-width:800px){html{-moz-transform: scale(0.50, 0.50); zoom: 0.50; zoom: 50%;}}
+@media screen and(max-width:1280px){html{-webkit-transform: scale(0.75, 0.75); zoom: 0.75; zoom: 75%;}}
+@media screen and(max-width:960px){html{-webkit-transform: scale( 0.50); zoom: 0.50; zoom: 50%;}}
+@media screen and(max-width:475px){html{-webkit-transform: scale( 0.10); zoom: 0.10; zoom: 10%;}}
+@media only screen and (max-width: 600px) {
+    .box2{
+        background: #111;
+    }
+    .box5{
+        display: none;
+    }
+    .box7{
+        display: none;
+    }
+}
 .box{
     text-align: center;
     overflow: hidden;
@@ -58,8 +70,8 @@ a:link {
 }
 .box6 #Slider{
     position: relative;
-    height: 850px;
-    width: 1540px;
+    max-height: 850px;
+    max-width: 1540px;
     z-index: 1;
 }
 .box6 #SliderControl{
@@ -67,9 +79,9 @@ a:link {
     z-index: 2;
 }
 .box6 #SliderBack{
-    position: absolute;
-    top: 835px;
-    left: 150px;
+        position: relative;
+    top: 730px;
+    left: -636px;
     overflow: hidden;
     z-index: 2;
     

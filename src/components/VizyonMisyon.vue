@@ -36,7 +36,7 @@ export default {
 <style scoped>
 #Lonely{
     height: 2600px;
-    width: 1900px;
+    min-width: 1900px;
     background-image: url(../../public/Photos/VizyonMisyon.png);
 }
 #MainPart{
