@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+
+html{
+    overflow-x: hidden;
+}
 .box{
     text-align: center;
     overflow: hidden;
@@ -65,7 +70,7 @@ a:link {
     z-index: 2;
 }
 .box6 #SliderBack{
-        position: relative;
+    position: relative;
     top: 730px;
     left: -636px;
     overflow: hidden;
@@ -74,14 +79,14 @@ a:link {
 }
 .box6 #SliderLeftArrow{
     position: absolute;
-    top: 882px;
+    top: 839px;
     left: 375px;   
     cursor: pointer;
     z-index: 3;
 }
 .box6 #SliderRightArrow{
     position: absolute;
-    top: 882px;
+    top: 839px;
     left: 500px;
     cursor: pointer;
     z-index: 3;
@@ -104,8 +109,8 @@ a:link {
     font-family: "Roboto";
     font-weight: 300;
     position: relative;
-    top: 20px;
-    left: -65px;
+    top: 26px;
+    left: -95px;
 }
 .box6 .Total{
     font-size: 30px;
@@ -113,8 +118,9 @@ a:link {
     color: rgb(38,38,38);
     font-family: "Roboto";
     position: relative;
-    top: -40px;
-    left: -15px;
+    top: -36px;
+    left: -49px;
+
 }
 .box6 .rotateRight{
     width: 150px;
@@ -129,7 +135,7 @@ a:link {
 }
 .box6 #RotationKadran{
     position: absolute;
-    top: 890px;
+    top: 856px;
     left: 225px;
     width: 43px;
     height: 1px;
@@ -140,7 +146,16 @@ a:link {
     background: white;
 }
 #HeaderInfo{
-    background-color: white;
+    mix-blend-mode: difference;
+    display: inline;
+    max-width: 400px;
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height: 47px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    z-index: 10;
 }
 .box8{
     background: white;
@@ -165,7 +180,7 @@ a:link {
 }
 .Kont{
     display: grid;
-    grid-template-rows: 100px 850px 130px;
+    grid-template-rows: 50px 850px 130px;
     grid-template-columns: 70px 155px 1200px 340px;
 }
 .sidenav {
@@ -486,11 +501,6 @@ a:link {
 .BiggestOne{
     background-image: url(./Photos/LastPart.png)
 }
-@media screen and(max-width:1280px){
-    body{
-        
-        display: none;
-    }
-}
+
 @media screen and(max-width:960px){html{-webkit-transform: scale( 0.50); zoom: 0.50; zoom: 50%;}}
 @media screen and(max-width:475px){html{-webkit-transform: scale( 0.10); zoom: 0.10; zoom: 10%;}}

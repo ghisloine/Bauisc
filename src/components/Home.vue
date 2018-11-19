@@ -10,14 +10,18 @@
         <div class="box box5">
             <img src="../../public/Photos/Logo.png" style="padding-top: 360px;" data-aos="fade-down">
         </div>
-        <div class="box box6" id="app2" >
+        <div class="box box6" id="app2" v-for='data in News' :key="data.id">
+             
             <img src="../../public/Photos/SliderBack2.png" id="SliderBack">
-            <div v-for='data in News' :key="data.id">
-
-                <p id="HeaderInfo" data-aos="fade-right">{{data[SliderID]['Header']}}
-                    <br>{{data[SliderID]['HeaderDate']}}</p>
-                <img id="Slider" :src="data[SliderID].NewsImage" data-aos="fade-left" class="responsive-img">
-
+                
+            <div>
+                   
+                
+                    <!--<p id="HeaderInfo" data-aos="fade-right">{{data[SliderID]['NewsHeader']}}</p>-->
+                    <img id="Slider" :src="data[SliderID].NewsImage" data-aos="fade-left" class="responsive-img">
+                
+                
+                    
                 <img src="../../public/Photos/RotationKadran.png" id="RotationKadran">
                 <img src="../../public/Photos/LeftArrow.png" id="SliderLeftArrow" v-on:click="prevPic">
                 <img src="../../public/Photos/RightArrow.png" id="SliderRightArrow" v-on:click="nextPic">
@@ -284,6 +288,7 @@ export default {
             prevPic : function(){
                 if(this.SliderID == 1){
                     this.SliderID = 1;
+                        
                 }else{
                     this.SliderID = this.SliderID - 1;
                 }
@@ -304,16 +309,23 @@ export default {
             },
             UniconRegatta : function(){
                 this.RaceID = 3;
-            }
+            },
+            
             
     }
     
 };
+
 </script>
 <style >
 @media only screen and (max-width: 1200px) {
     body{
         zoom:75%;
+    }
+}
+@media screen and (max-width:350px){
+    body{
+        zoom: 50%;
     }
 }
 .card{

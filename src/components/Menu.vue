@@ -196,7 +196,7 @@ export default {
   width: 70px;
   background: url("../../public/Photos/Menu.png");
   cursor: pointer;
-  position: fixed;
+  position: static;
 }
 
 a:link {
